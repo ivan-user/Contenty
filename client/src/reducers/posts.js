@@ -1,6 +1,9 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default (posts = [], action) => {
     switch (action.type) {
+        case 'DELETE':
+            // eslint-disable-next-line eqeqeq
+            return posts.filter((post) => post._id !== action.payload);
         case 'FETCH_ALL':
             return action.payload;
         case 'CREATE':
