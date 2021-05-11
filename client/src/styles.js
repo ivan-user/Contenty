@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-export default makeStyles(() => ({
+export default makeStyles((theme) => ({
   appBar: {
     borderRadius: 10,
     margin: "30px 0",
@@ -16,4 +16,9 @@ export default makeStyles(() => ({
     marginLeft: "15px",
     padding: "10px",
   },
+  [theme.breakpoints.down('sm')]: {
+    mainContainer: {
+        flexDirection: "column-reverse"
+    }
+  }
 }));

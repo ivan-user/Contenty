@@ -51,6 +51,7 @@ export default makeStyles({
     justifyContent: "space-between",
   },
   message: {
-    fontSize: "1em",
+    fontSize: ".9em",
+    color: "gray",
   },
 });
