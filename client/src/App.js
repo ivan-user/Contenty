@@ -15,7 +15,7 @@ import useStyles from './styles';
 
      useEffect(() => {
          dispatch(getPosts());
-     }, [dispatch]);
+     }, [currentId, dispatch]);
 
      return (
          <Container maxWidth='lg'>

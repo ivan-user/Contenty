@@ -32,8 +32,8 @@ import useStyles from './styles.js';
         }
         else {
             dispatch(updatePost(currentId, postData));
-            clear();
         }
+        clear();
     }
 
     const clear = () => {
@@ -44,7 +44,7 @@ import useStyles from './styles.js';
     return (
         <Paper className={classes.paper}>
             <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit} >
-                <Typography variant="h6" >Create Content</Typography>
+                <Typography variant="h6" >{ currentId ? "Edit" : "Create" } Content</Typography>
                 <TextField name="creator" variant="outlined" label="Creator" fullWidth value={postData.creator} onChange={handleChange} />
                 <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title} onChange={handleChange} />
                 <TextField name="message" variant="outlined" label="Message" fullWidth value={postData.message} onChange={handleChange} />
