@@ -43,10 +43,14 @@ export default makeStyles({
   },
   title: {
     padding: "0 16px",
+    lineHeight: "1.1em"
   },
   cardActions: {
     padding: "0 16px 8px 16px",
     display: "flex",
     justifyContent: "space-between",
+  },
+  message: {
+    fontSize: "1em",
   },
 });
