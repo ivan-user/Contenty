@@ -2,11 +2,11 @@ import React, { useEffect, useState }  from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
-import { getPosts } from './actions/posts';
+import { getPosts } from './actions/posts.js';
 import logo from './images/logo_1.png'
-import Posts from './components/Posts/Posts';
-import Form from './components/Form/Form';
-import useStyles from './styles';
+import Posts from './components/Posts/Posts.js';
+import Form from './components/Form/Form.js';
+import useStyles from './styles.js';
  
  export default function App() {
      const [currentId, setCurrentId] = useState(null)

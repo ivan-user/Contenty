@@ -1,5 +1,5 @@
 import React from 'react'
-import useStyles from './styles';
+import useStyles from './styles.js';
 import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core'
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt'
 import DeleteIcon from '@material-ui/icons/Delete'
@@ -7,7 +7,7 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
 import moment from 'moment'
 import { useDispatch } from 'react-redux'
 
-import { deletePost, likePost } from '../../../actions/posts'
+import { deletePost, likePost } from '../../../actions/posts.js'
 
  const Post = ({ post, setCurrentId }) => {
     const classes = useStyles();
