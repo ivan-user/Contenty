@@ -7,9 +7,9 @@ import postRoutes from './routes/posts.js'
 const app = express();
 dotenv.config();
 
+app.use(cors());
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
-app.use(cors());
 
 app.get('/', (req, res) => {
     res.send("Hello to Contenty App");
